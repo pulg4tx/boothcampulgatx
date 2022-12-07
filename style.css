@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+.imgn {
+  text-align: center;
+}
+
+.imgn ol {
+  text-align: left;
+  display: inline-block;
+
+}
+
+#centrar-listas {
+  text-align: center;
+}
+
+.HOLA {
+  text-align: left;
+  display: inline-block;
+}
