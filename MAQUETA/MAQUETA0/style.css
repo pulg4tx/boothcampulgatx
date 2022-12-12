@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 92%;
+	max-width: 960px;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+}
+.logo {
+	display: block;
+	text-align: left;
+}
+.posion {
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+	background-color: rgba(49,47,102,1.00);
+    width: 187px;
+    text-align: center;
+	
+}
+.posion span {
+	width: 80px;
+    height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255,255,255,1.00);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 53px;
+	text-align: center;
+}
+}
+.loguito {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 53px;
+    width: 80px;
+    height: 53px;
+    text-align: center;
+}
+header {
+    float: none;
+    width: 100%;
+}
+.perfil {
+    width: 259px;
+    border-radius: 50%;
+    height: 259px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    color: #FFFFFF;
+    line-height: 250px;
+    background-color: #594784;
+    clear: both;
+    float: left;
+    margin-right: 29px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+header .perfil0 h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(46,46,46,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 24px;
+}
+header .perfil0 h3 {
+	font-family: sans-serif;
+    color: rgba(49,47,102,1.00);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+	text-align: left;
+}
+
+header .perfil0 {
+    text-align: left;
+    margin-top: 7%;
+}

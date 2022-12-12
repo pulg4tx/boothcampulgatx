@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    
+    .box {
+        text-align: center;   
+    }
+
+    span {
+        font-size: 80px;
+    }
+}
