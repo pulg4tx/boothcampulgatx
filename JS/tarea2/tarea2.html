@@ -3,12 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <title>Tarea02</title>
-<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
+    <!--
     <script>
+      var num = prompt('Entre un numero');
+      num = parseInt(num);
+      if(num===2 || num===3 || num===5){
+        console.log("El numero es primo");
+      } else {
+        console.log("El numero NO es primo");
+      }
+    </script>
+    -->
+    <!--
+    <script>
+      var num = prompt('Entre un numero');
+      parseInt(num);
+      if((num%2)===0){
+        console.log("El numero es par");
+      } else {
+        console.log("El numero NO es par");
+      }
+    </script>
+    -->
+    <!--
+    <script>
+      var num = prompt('Entre un numero');
+      num = parseInt(num);
+      if(num===1){
+        console.log("El dia es Lunes");
+      } 
+      else if(num===2){
+        console.log("El dia es Martes");
+      } 
+      else if(num===3){
+        console.log("El dia es Miercoles");
+      } 
+      else if(num===4){
+        console.log("El dia es Jueves");
+      } 
+      else if(num===5){
+        console.log("El dia es Viernes");
+      } 
+      else if(num===6){
+        console.log("El dia es Sabado");
+      } 
+      else if(num===7){
+        console.log("El dia es Domingo");
+      } 
+    </script>
+    -->
+    <!--
+    <script>
+        var num = prompt('Entre un numero');
+      num = parseInt(num);
+      if(num===1){
+        console.log("El mes es Enero");
+      } else if(num===2){
+        console.log("El mes es Febrero");
+      } else if(num===3){
+        console.log("El mes es Marzo");
+      } else if(num===4){
+        console.log("El mes es Abril");
+      } else if(num===5){
+        console.log("El mes es Mayo");
+      } else if(num===6){
+        console.log("El mes es Junio");
+      } else if(num===7){
+        console.log("El mes es Julio");
+      } else if(num===8){
+        console.log("El mes es Agosto");
+      } else if(num===9){
+        console.log("El mes es Septiembre");
+      } else if(num===10){
+        console.log("El mes es Octubre");
+      } else if(num===11){
+        console.log("El mes es Noviembre");
+      } else if(num===12){
+        console.log("El mes es Diciembre");
+      } 
+    </script>
+    -->
+    <!--
+    <script>
+        var sueldoMensual = 40000 / 12;
+        var antiguedad = prompt('Ingresa la antigüedad');
+        antiguedad = parseInt(antiguedad);
+
+        if(antiguedad>10){
+            sueldoMensual += (sueldoMensual * 0.1);
+        } else if(antiguedad <=10 && antiguedad > 5) {
+            sueldoMensual += (sueldoMensual * 0.07);
+        }
+        else if(antiguedad <=5 && antiguedad > 3) {
+            sueldoMensual += (sueldoMensual * 0.05);
+        }
+        else if(antiguedad <=3) {
+            sueldoMensual += (sueldoMensual * 0.03);
+        }
+
+        console.log(`El sueldo mensual es de ${sueldoMensual} euros`);
+    </script>
+    -->
+    <!--
+    <script>
+        var x = prompt("ingresa un numero");
+        x = parseInt(x);
+
+        if (x > 100) {
+            console.log("El numero es mayor que 100");
+        } else {
+            console.log("El nuermo es menor que 100");
+        }
+    </script>
+    -->
+    <!--
+    <script>
+        var x1 = prompt("ingresa el primer numero");
+        var x2 = prompt("ingresa el segundo numero");
+
+        x1 = parseInt(x1);
+        x2 = parseInt(x2);
+
+        if(((x1%2)===0) && ((x2%2)===0)){
+            console.log("Ambos numeros son pares");
+        } else if(((x1%2)!==0) && ((x2%2)!==0)) {
+            console.log("Ambos numeros son IMPARES");
+        } else {
+            console.log("Al menos un numero es par y uno impar");
+        }
+    </script>
+    -->
+    <!--
+    <script>
+        var num1 = prompt("Ingresa el primer numero");
+        var num2 = prompt("Ingresa el segundo numero");
+        var num3 = prompt("Ingresa el tercer numero");
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+        
+        if ((num1 * num2)===num3) {
+            console.log("La multiplicacion de el primero con el segundo es igual al tercero");
+        } else {
+            console.log("La multiplicacion de el primero con el segundo NO es igual al tercero");
+        }        
+    </script>
+    -->
+    <!--
+    <script>
+        var int = prompt("Por favor ingrese el porcentaje de interes");
+        var cap = prompt("Por favor ingrese el capital");
+
+        int = parseInt(int);
+        cap = parseInt(cap);
+
+        var inter = (cap*(int/100));
+
+        if(inter > 7000) {
+          console.log(`INVIERTA, SU SALDO SERA ${inter + cap}`);
+        } else {
+          console.log("NO INVIERTA");
+        }
+    </script>
+    -->
+    <!--
+    <script>
+      var not1 = prompt("Ingresa la primera nota");
+      var not2 = prompt("Ingresa la segunda nota");
+      var not3 = prompt("Ingresa la tercera nota");
+
+      var prom = (parseFloat(not1) + parseFloat(not2) + parseFloat(not3)) / 3.0
+
+      if (prom >= 3.0) {
+        console.log("EL ESTUDIANTE APRUEBA");
+      } else {
+        console.log("EL ESTUDIANTE REPRUEBA");
+      }
+    </script>
+    -->
+    <script>
+      var valorCompra = prompt("Ingresa el valor de la compra");
+      valorCompra = parseInt(valorCompra);
+
       
     </script>
+
 </body>
 </html>
