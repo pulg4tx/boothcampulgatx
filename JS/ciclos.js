@@ -672,3 +672,124 @@ var expo = () => {
 
 expo();
 */
+/*
+//SENOH
+var factorial = (n) => {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * factorial(n - 1);
+	}
+}
+
+var EXPO = (X,terminos,acumulador) => {
+	if (terminos >= 1)
+	{
+		EXPO (X,terminos-1,acumulador+Math.pow(X,(1+(2*(terminos-1))))/factorial(1+2*(terminos-1)));	
+	}
+	else
+	{
+		process.stdout.write(`el senh(${X}) = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f", "entre el valor de X: ");
+	var nmrterminos = scanf("%f", "entre el numero de terminos de la serie a calcular: ");
+	EXPO(X, nmrterminos, 0.);
+}
+
+expo();
+*/
+/*
+//COSH
+var factorial = (n) => {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * factorial(n - 1);
+	}
+}
+
+var EXPO = (X,terminos,acumulador) => {
+	if (terminos >= 1)
+	{
+		EXPO (X,terminos-1,acumulador+(Math.pow(X,2*(terminos-1))/factorial(2*(terminos-1))));
+	}
+	else
+	{
+		process.stdout.write(`el cosh(${X}) = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f", "entre el valor de X: ");
+	var nmrterminos = scanf("%f", "entre el numero de terminos de la serie a calcular: ");
+	EXPO(X, nmrterminos, 0.);
+}
+
+expo();
+
+*/
+/*
+//LN
+var factorial = (n) => {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * factorial(n - 1);
+	}
+}
+
+var EXPO = (X,terminos,acumulador) => {
+	if (terminos >= 1)
+	{
+		EXPO (X,terminos-1,acumulador+(Math.pow (-1,terminos+1)*Math.pow(X-1,terminos))/terminos);
+	}
+	else
+	{
+		process.stdout.write(`el ln(${X}) = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f", "entre el valor de X: ");
+	var nmrterminos = scanf("%f", "entre el numero de terminos de la serie a calcular: ");
+	EXPO(X, nmrterminos, 0.);
+}
+
+expo();
+*/
+/*
+//SEN
+var factorial = (n) => {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * factorial(n - 1);
+	}
+}
+
+var EXPO = (X,terminos,acumulador) => {
+	if (terminos >= 1)
+	{
+		EXPO(X,terminos-1,acumulador+(Math.pow(-1,terminos-1)*Math.pow(X,1+2*(terminos-1)))/factorial(1+2*(terminos-1)));
+	}
+	else
+	{
+		process.stdout.write(`el sen(${X}) = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f", "entre el valor de X: ");
+	var nmrterminos = scanf("%f", "entre el numero de terminos de la serie a calcular: ");
+	EXPO(X, nmrterminos, 0.);
+}
+
+expo();
+*/
