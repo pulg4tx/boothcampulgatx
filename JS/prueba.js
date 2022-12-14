@@ -287,9 +287,9 @@ var ciclo = (contador) => {
 	if (contador<=25) 
 		{
 		espacios (1, 80-contador);
-	    letras (1, contador);
-	    process.stdout.write("\n");
-	    ciclo (contador+1);
+		letras (1, contador);
+		process.stdout.write("\n");
+		ciclo (contador+1);
 		}
 }
 
@@ -309,43 +309,366 @@ var letras = (contador3, limite) => {
 
 ciclo(1);
 */
- /*
+/*
 var ciclo = (contador, columnas, filas, caracter) => {
-	if (contador<=filas) {
-		ciclo2 (1, contador-1, 32);
-		ciclo2 (-1, columnas-(contador*2), 82-caracter);
+   if (contador<=filas) {
+	   ciclo2 (1, contador-1, 32);
+	   ciclo2 (-1, columnas-(contador*2), 82-caracter);
+	   process.stdout.write("\n");
+	   ciclo (contador+1, columnas, filas, caracter+2);
+   }
+}
+
+var ciclo2 = (contador2, final, caracter) => {
+   if (contador2<=final) {
+	   if(caracter === 80){
+		   process.stdout.write("P");
+	   } else if (caracter === 78) {
+		   process.stdout.write("N");
+	   } else if (caracter === 76) {
+		   process.stdout.write("L");
+	   } else if (caracter === 74) {
+		   process.stdout.write("J");
+	   } else if (caracter === 72) {
+		   process.stdout.write("H");
+	   } else if (caracter === 70) {
+		   process.stdout.write("F");
+	   } else if (caracter === 68){
+		   process.stdout.write("D");
+	   } else if (caracter === 32) {
+		   process.stdout.write(" ");
+	   }
+	   ciclo2 (contador2+1, final, caracter);
+   }
+}
+
+var funcion = (columnas, filas) => {
+   ciclo (1, columnas, filas, 2);
+}
+
+funcion (13, 7);
+*/
+/*
+var renglon = (contador, final) => {
+	if (contador<=final) {
+		espacio (1, contador+32);
+		caracter (1, 15-(contador*2));
 		process.stdout.write("\n");
-		ciclo (contador+1, columnas, filas, caracter+2);
+		renglon (contador+1, final);
+	}
+}
+
+var espacio = (contador2, final) => {
+	if (contador2<=final) {
+		process.stdout.write(" ");
+		espacio (contador2+1, final);
+	}
+}
+
+var caracter = (contador3, final) => {
+	if (contador3<=final) {
+		process.stdout.write("P");
+		caracter (contador3+1, final);
+	}
+}
+renglon (1, 7);
+*/
+/*
+var ciclo = (contador, columnas, filas) => {
+	if (contador<=filas) {
+		if (contador==1) {
+			ciclo2 (1, columnas,  80);
+			process.stdout.write("\n");
+		}
+		else {
+			ciclo2 (1, contador-1, 32);
+			ciclo2 (-1, columnas-(contador*2), 80);
+			process.stdout.write("\n");
+		}
+			ciclo (contador+1, columnas, filas);
 	}
 }
 
 var ciclo2 = (contador2, final, caracter) => {
 	if (contador2<=final) {
-		if(caracter === 80){
-			process.stdout.write("P");
-		} else if (caracter === 78) {
-			process.stdout.write("N");
-		} else if (caracter === 76) {
-			process.stdout.write("L");
-		} else if (caracter === 74) {
-			process.stdout.write("J");
-		} else if (caracter === 72) {
-			process.stdout.write("H");
-		} else if (caracter === 70) {
-			process.stdout.write("F");
-		} else if (caracter === 68){
-			process.stdout.write("D");
-		} else if (caracter === 32) {
+		if(caracter===80) {
+			  process.stdout.write("P");
+		} else {
 			process.stdout.write(" ");
 		}
 		ciclo2 (contador2+1, final, caracter);
 	}
 }
 
-var funcion = (columnas, filas) => {
-	ciclo (1, columnas, filas, 2);
-}
+ciclo (1, 13, 7);
 
-funcion (13, 7);
 */
 
+/*
+var ci = (contador, columnas, filas) => {
+	if (contador < filas) {
+		ce(1, 27, 32);
+		ce(1, contador, 65);
+		ce(1, columnas - (contador * 2), 32);
+		ce(1, contador, 65);
+		process.stdout.write("\n");
+		ci(contador + 1, columnas, filas);
+	}
+}
+
+var ce = (contador, final, caracter) => {
+	if (contador <= final) {
+		if (caracter === 65) {
+			process.stdout.write("A");
+		} else {
+			process.stdout.write(" ");
+		}
+		ce(contador + 1, final, caracter);
+	}
+}
+
+var ce2 = (contador, columnas, filas) => {
+	if (contador < filas) {
+		ci2(54, 27, 32);
+		ci2(4, contador - 1, 65);
+		ci2(7, columnas - (contador * 2), 32);
+		ci2(4, contador - 1, 65);
+		process.stdout.write("\n");
+		ce2(contador + 1, columnas, filas);
+	}
+}
+
+var ci2 = (contador, final, caracter) => {
+	if (contador > final) {
+		if (caracter === 65) {
+			process.stdout.write("A");
+		} else {
+			process.stdout.write(" ");
+		}
+		ci2(contador - 1, final, caracter);
+	}
+}
+
+ci(1, 8, 4);
+ce2(1, 9, 5);
+
+*/
+/*
+var ci = (contador, columnas, filas) => {
+	if (contador <= filas) {
+		ce(2, columnas + contador, 32);
+		ce(1, columnas - (contador * 2), 90);
+		process.stdout.write("\n");
+		ci(contador + 1, columnas, filas);
+	}
+}
+
+var ce = (contador, final, caracter) => {
+	if (contador <= final) {
+		if (caracter === 90) {
+			process.stdout.write("Z");
+		} else {
+			process.stdout.write(" ");
+		}
+		ce(contador + 1, final, caracter);
+	}
+}
+
+var ce2 = (contador, columnas, filas) => {
+	if (contador <= filas) {
+		if (contador == 1) {
+			ci2(9, contador - 1, 32);
+			ci2(14, columnas, 90);
+			process.stdout.write("\n");
+		}
+		else {
+			ci2(9, contador - 1, 32);
+			ci2(12, columnas - (contador * 2), 90);
+			ci2(9, contador - 1, 32);
+			process.stdout.write("\n");
+		}
+		ce2(contador + 1, columnas, filas);
+	}
+}
+
+var ci2 = (contador, final, caracter) => {
+	if (contador > final) {
+		if (caracter === 90) {
+			process.stdout.write("Z");
+		} else {
+			process.stdout.write(" ");
+		}
+		ci2(contador - 1, final, caracter);
+	}
+}
+
+ce2(1, 13, 4);
+ci(1, 7, 3);
+*/
+/*
+var ce = (contador, columnas, filas) => {
+	if (contador <= filas) {
+		if (contador == filas) {
+			ci(1, (columnas / 2), 32);
+			ci(1, 1, 90);
+		}
+		else {
+			ci(1, contador - 1, 32);
+			ci(1, 1, 90);
+			ci(-1, (columnas - (contador * 2)) - 2, 32);
+			ci(1, 1, 90);
+			process.stdout.write("\n");
+		}
+		ce(contador + 1, columnas, filas);
+	}
+}
+
+var ci = (contador, final, caracter) => {
+	if (contador <= final) {
+		if (caracter === 90) {
+			process.stdout.write("Z");
+		} else {
+			process.stdout.write(" ");
+		}
+		ci(contador + 1, final, caracter);
+	}
+}
+
+ce(1, 19, 10);
+console.log("");
+*/
+/*
+var ce = (contador, columnas, filas) => {
+	if (contador <= filas) {
+		if (contador == 1) {
+			ci(9, contador - 1, 32);
+			process.stdout.write("Z\n");
+		}
+		else {
+			ci(9, contador - 1, 32);
+			process.stdout.write("Z");
+			ci(16, columnas - (contador * 2), 32);
+			process.stdout.write("Z\n");
+		}
+		ce(contador + 1, columnas, filas);
+	}
+}
+
+var ci = (contador, final, caracter) => {
+	if (contador > final) {
+		process.stdout.write(" ");
+		ci(contador - 1, final, caracter);
+	}
+}
+ce(1, 19, 10);
+*/
+/*
+var ci = (contador, columnas, filas) => {
+	if (contador<=filas) {
+		ce (1, contador, 32);
+		ce (1, columnas-(contador*2), 32);
+		ce (1, contador, 65);
+		process.stdout.write("\n");
+		ci (contador+1, columnas, filas);
+	}
+}
+
+var ce = (contador, final, caracter) => {
+	if (contador<=final) {
+		if (caracter === 65) {
+			process.stdout.write("A");
+		} else {
+			process.stdout.write(" ");
+		}
+		ce (contador+1, final, caracter);
+	}
+}
+
+var ce2 = (contador, columnas, filas) => {
+	if (contador<=filas) {
+		if (contador==1) {
+			
+		}
+		else {
+			ci2 (6, (contador-1), 32);
+			ci2 (38, columnas-contador*2, 32);
+			ci2 (6, (contador-1), 65);
+			process.stdout.write("\n");
+		}
+		ce2 (contador+1, columnas, filas);
+	}
+}
+
+var ci2 = (contador2, final, caracter) => {
+	if (contador2>final) {
+		if (caracter === 65) {
+			process.stdout.write("A");
+		} else {
+			process.stdout.write(" ");
+		}
+		ci2 (contador2-1, final, caracter);
+	}
+}
+
+ci (1, 39, 6);
+ce2 (1, 13, 7);}
+*/
+/* TAYLOR
+var factorial = (n) => {
+	if (n==0)
+	{
+		return 1;
+	}
+	else
+	{
+		return n*factorial(n-1);
+	}
+}
+
+var EXPO = (X,terminos,acumulador) => {
+	if (terminos >= 1)
+	{
+		EXPO(X,terminos-1,acumulador+(Math.pow(X,terminos-1)/factorial(terminos-1)));
+	}
+	else
+	{
+		process.stdout.write(`e elevado a la ${X} = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f","entre el valor de X: ");
+	var nmrterminos= scanf("%f","entre el numero de terminos de la serie a calcular: ");	
+	EXPO(X,nmrterminos,0.);
+}
+
+expo();
+*/
+/*
+//COSENO
+var factorial = (n) => {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * factorial(n - 1);
+	}
+}
+
+var EXPO = (X, terminos, acumulador) => {
+	if (terminos >= 1) {
+		EXPO(X, terminos - 1, acumulador + (Math.pow(-1, terminos - 1) * Math.pow(X, 2 * (terminos - 1)) / factorial(2 * (terminos - 1))));
+	}
+	else {
+		process.stdout.write(`el cos(${X}) = ${acumulador}`);
+	}
+}
+
+var expo = () => {
+	var X = scanf("%f", "entre el valor de X: ");
+	var nmrterminos = scanf("%f", "entre el numero de terminos de la serie a calcular: ");
+	EXPO(X, nmrterminos, 0.);
+}
+
+expo();
+*/
