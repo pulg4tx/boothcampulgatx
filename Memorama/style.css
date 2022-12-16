@@ -1,24 +1,21 @@
 :root {
     --w: calc(70vw / 6);
-    --h: calc(70vh / 4);
+    --h: calc(70vh / 3);
 }
 
 * {
-    transition: all 0.5s;
+    transition: all 0.5s; /*todas las animaciones del documento*/
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    -webkit-perspective: 1000;
     background: powderblue;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /*flexbox*/
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    font-family: calibri;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 div {
@@ -66,6 +63,7 @@ div {
     border-radius: 50px;
     border: white 5px solid;
     font-size: 130%;
+    color: aliceblue;
 }
 
 @keyframes iniciar {
